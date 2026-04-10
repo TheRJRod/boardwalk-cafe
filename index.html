@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Boardwalk Cafe | BBQ</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#930100",
+                    "on-tertiary-container": "#fefcff",
+                    "on-surface": "#2b1613",
+                    "secondary-fixed-dim": "#d2cc00",
+                    "on-primary-fixed": "#410000",
+                    "on-secondary-container": "#696500",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#004491",
+                    "on-primary": "#ffffff",
+                    "secondary": "#646100",
+                    "on-tertiary-fixed": "#001a40",
+                    "inverse-primary": "#ffb4a8",
+                    "surface-dim": "#f8d1cb",
+                    "on-error": "#ffffff",
+                    "primary": "#bc0100",
+                    "tertiary-fixed-dim": "#acc7ff",
+                    "primary-fixed-dim": "#ffb4a8",
+                    "surface": "#fff8f6",
+                    "on-background": "#2b1613",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#ffe9e6",
+                    "on-secondary-fixed-variant": "#4b4900",
+                    "primary-container": "#eb0000",
+                    "on-surface-variant": "#603e39",
+                    "inverse-on-surface": "#ffedea",
+                    "error-container": "#ffdad6",
+                    "background": "#fff8f6",
+                    "outline": "#956d67",
+                    "surface-variant": "#ffdad4",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#ffdad4",
+                    "surface-container-low": "#fff0ee",
+                    "surface-container-high": "#ffe2dd",
+                    "on-secondary-fixed": "#1e1c00",
+                    "on-primary-container": "#fffbff",
+                    "outline-variant": "#ebbbb4",
+                    "tertiary-container": "#0071e8",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#fff8f6",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#ffdad4",
+                    "inverse-surface": "#422a27",
+                    "tertiary": "#0059ba",
+                    "secondary-container": "#ede500",
+                    "tertiary-fixed": "#d7e2ff",
+                    "secondary-fixed": "#f0e800",
+                    "surface-tint": "#c00100"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Be Vietnam Pro"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift { background-color: rgba(255, 233, 230, 0.2); }
+        .glass-nav { backdrop-filter: blur(12px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-orange-50/80 dark:bg-stone-950/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<!-- <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold overflow-hidden">
+<img alt="Boardwalk Cafe Logo" data-alt="Minimalist circular logo for Boardwalk Cafe with a small smoke icon and serif letters BC in white on a deep red background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM_4i0YU0ruG2y-8cqcRDeZVB41uTbzJQkWbFn9-KJ8tPUJn-d4vk9NQtv7sH1su1b450tpZtSSelgwRwYntoiFa5O28LAbGyHIRZ5Sq_h9iRgG9k_-_gIKOc3wODpQaWLQEplcWmpfvHYBisMFAB3fFqHC6hZjHSLXM8I0_zVjYrfeYOUWMgzuz54DRR53ZfjsTSzyxOrnASYAf2qppH71bH5jIeezcs7F8XVWY8v7gGOviEQ4aW9mnhtMwBj9vtOg72Uc8mxXYk"/>
+</div> -->
+<span class="text-2xl font-headline font-bold text-red-800 dark:text-red-600 tracking-tight">Boardwalk Cafe</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<!-- <a class="text-red-700 font-bold border-b-2 border-red-700 hover:text-red-600 transition-colors duration-300" href="#">Menu</a> -->
+<!-- <a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-600 transition-colors duration-300" href="#">Our Story</a> -->
+<!-- <a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-600 transition-colors duration-300" href="#">Contact</a> -->
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:scale-95 duration-150 ease-in-out shadow-lg">Visit Us</button>
+</div>
+<button class="md:hidden text-red-700">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[751px] flex items-center px-6 lg:px-12 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Pit-Smoked BBQ" class="w-full h-full object-cover" data-alt="Close-up of succulent sliced beef brisket with deep red smoke ring and glistening bark on a dark wooden board with soft ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAIE_JSvCOYnQ7CGdVUfIz1hd69BHZtPvtFejNYnXSNiQeHHXr9bt6f_Gm7L_zXL65XHgZCcK1o_mVXENFx_sRzHrRrTWUQfRdnyVHK7WPzsf3gshgX8ZnV1OmWUzYPJMDImEhwJXfErNBUgDFhfCCZSondfJibE2XIABcS5heFynjquvUFFzogbIoAcvkmI9mGOUTQo2fP2ckGU3huY3HTdcX1OtVZ4DlCjvH1tjFWDvj765M-sEFHaOXeKvmgPxghviU28Xrhpo"/>
+<div class="absolute inset-0 bg-gradient-to-r from-on-surface/80 via-on-surface/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-3xl">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold mb-6">
+<span class="material-symbols-outlined text-sm" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+                    FOLLOW THE SMOKE
+                </div>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-headline font-extrabold text-white leading-[1.1] mb-6 tracking-tighter">
+                    16 Years of <br/><span class="text-secondary-fixed">Pit-Smoked</span> Perfection
+                </h1>
+<p class="text-xl md:text-2xl text-white/90 font-body mb-10 max-w-xl leading-relaxed">
+                    Family-run, home-cooked, and smoked to perfection over local hardwoods for that authentic boardwalk flavor.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-10 py-4 rounded-full text-lg font-bold shadow-2xl hover:scale-105 transition-transform">
+                        Visit Us
+                    </button>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-white/20 transition-colors">
+                        Explore Menu
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bento Menu Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-4">The Pitmaster's Selection</h2>
+<p class="text-lg text-on-surface-variant">Carefully curated signatures, slow-cooked for up to 18 hours using our proprietary spice rub and traditional techniques.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 group">
+                    View Full Menu <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-full md:h-[800px]">
+<!-- Main Feature -->
+<div class="md:col-span-8 group relative rounded-xl overflow-hidden bg-surface-container-low shadow-sm">
+<img alt="Pit-Smoked Brisket" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Juicy thick-cut beef brisket platter with pickled red onions and artisanal barbecue sauce in a professional studio food photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFqBDiAUQmlBqzu1RtsjX6_QdP6JvKmlFFOMoxnY_H9uVtAWEtpLxog7VpeN2i5dzYI9bsv10f3IZ5khzAqVoTLdp76bQZPyAHNU4XRhbagY6hHP8znZRbqnW_XyW5Cn4SOj8J65zHbnEmdnnR6yoUJvHO5xsvJki9slxHWVlfwe4STvNik5ecpPA_QHA92GSGa1nyNyM58fJhBy6ISOVVmyFmbh3B5DeKsksTyCO-Xjf2F2oJdcoBuvhVbto8ulG1eEqh-a04XiA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<span class="bg-primary text-on-primary px-3 py-1 rounded-full text-xs font-bold mb-4 inline-block">MOST POPULAR</span>
+<h3 class="text-3xl font-headline font-bold text-white mb-2">Pit-Smoked Brisket</h3>
+<p class="text-white/80 max-w-md">18-hour slow-smoked Prime Beef with a peppercorn bark and deep smoke ring. Served with our house-made espresso BBQ sauce.</p>
+<div class="mt-6 flex gap-4">
+<span class="text-secondary-fixed font-bold text-2xl">$24.99</span>
+<button class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-full font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span> Add to Tray
+                            </button>
+</div>
+</div>
+</div>
+<!-- Secondary Item -->
+<div class="md:col-span-4 group relative rounded-xl overflow-hidden bg-surface-container-low">
+<img alt="Slow-Roasted Ribs" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="St. Louis style pork ribs glazed with sticky sweet sauce, stacked on a wooden board with glowing warm highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqmbjqoIz422SRcFutjfP3uV4t67rmF8zQ3QK-04paKoOsycHvDmZnVcSW1MbeNHm_jDloZQNlWu0Yy0oiamid0CqNW7NnGIpRZxnN0aEyWI9hL7kF6a5I8YhBcEjn48SilGRYPkDitytdeQrQiecezWkBHs0ruXfBHDBuDN2swTAzKqIv9lm4P49DsGVipgw6qKhlzKeSQk2l_gI7Y8mGciVJDSm8P6Yg0pPr5Dmt92wy0A41SQZZ466zkCMk0b-gYwNG9jywOQg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-6">
+<h3 class="text-2xl font-headline font-bold text-white mb-1">Slow-Roasted Ribs</h3>
+<p class="text-white/80 text-sm mb-4">Fall-off-the-bone tender with a sweet and tangy glaze.</p>
+<span class="text-secondary-fixed font-bold text-xl">$21.50</span>
+</div>
+</div>
+<!-- Sides -->
+<!-- <div class="md:col-span-4 group relative rounded-xl overflow-hidden bg-surface-container-low">
+<img alt="Classic Sides" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Creamy mac and cheese in a cast iron skillet with crispy breadcrumb topping and melted cheese pull" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD95N84ANyxM-YIgukN9zbjx3rdfZVhhSKDorW5bRhQ0iNVqCjDUYhiXjXxgc_kaG8UL05iVJkSauL5IAFrW41rGxx0A_6amiuEHdwCJo8AkYP_oSod2jtLnjzc5dGQ1G3AC5u65g_SQCnWYRDEbqKqiFsVDt3-PO9Af_xGIFMIq8Rvl9OBoBALHu3VrBgXFroQKEoU_YPjNMYf7NUjMWIAU2u3beGKg3B3ssB1IOqlfvuozYdZ2xhVBpQQGOwGmNHW8a2wBr5D_A0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-6">
+<h3 class="text-2xl font-headline font-bold text-white mb-1">Classic Sides</h3>
+<p class="text-white/80 text-sm mb-4">Burnt end beans, creamy slaw, and jalapeño cornbread.</p>
+<span class="text-secondary-fixed font-bold text-xl">From $4.99</span>
+</div>
+</div> -->
+<!-- Reward/CTA Bento -->
+<!-- <div class="md:col-span-8 bg-surface-container-highest rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-8 border border-outline-variant/10">
+<div class="flex-1">
+<h3 class="text-3xl font-headline font-bold text-on-surface mb-2">Join the Pit Crew</h3>
+<p class="text-on-surface-variant leading-relaxed">Sign up for our rewards program and get a free side of Jalapeño Cornbread on your next visit.</p>
+</div>
+<div class="flex gap-2">
+<input class="bg-surface-container-lowest border-none rounded-lg focus:ring-2 focus:ring-primary/40 px-4 py-3" placeholder="Enter email" type="email"/>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-bold">Join Now</button>
+</div>
+</div> -->
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-24 bg-surface-container-low relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary-fixed/20 rounded-full blur-3xl"></div>
+<div class="relative rounded-xl overflow-hidden shadow-2xl rotate-2">
+<img alt="Our Kitchen" data-alt="Interior of a rustic kitchen with wood-fired ovens, aromatic smoke wisps, and family members prepping food in soft warm light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHcMoyes5dI4ZJKf2DkH3OqxuDSMXtAWHahwA0GJnup-RuRGHIcQY41SYAUTfbzBkWU2BDJWksVOJDMCjlk9Df7C7EtyaKvskgE3TgAbvqQmzyDgzTaOQsboAdh9LjonJX52LJheJTeT9qXwrPWP-UX4U7WoVBe-c_NiFnwLx25sH9Jq-e7pB2zMDhqMhRf3KKXmdRf1pR8TDE021kN5FzwKYlR6OaV4V63FrVQIHVSP3u25F_5IN957OoabtNXSYBSUoAq1KoW40"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl max-w-[240px] -rotate-3 border border-outline-variant/15">
+<p class="font-headline font-bold text-primary text-lg">16 years</p>
+<p class="text-sm text-on-surface-variant">The same pit, the same family, the same secret rub.</p>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-8">Our Story</h2>
+<div class="space-y-6">
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                            What started as a small boardwalk stand 16 years ago has grown into a local culinary destination. We've spent nearly two decades perfecting the art of pit-smoking, treating every brisket and rack of ribs with the same care as we did on day one.
+                        </p>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                            As a family-run business, we believe in the power of slow food. No shortcuts, no electric smokers—just real wood, real smoke, and real passion. Our techniques are traditional, but our flavors are legendary.
+                        </p>
+</div>
+<div class="mt-10 grid grid-cols-3 gap-4 border-t border-outline-variant/20 pt-10">
+<div>
+<p class="text-3xl font-headline font-bold text-primary">16</p>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Years</p>
+</div>
+<div>
+<p class="text-3xl font-headline font-bold text-primary">150k+</p>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Briskets</p>
+</div>
+<div>
+<p class="text-3xl font-headline font-bold text-primary">100%</p>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Family Owned</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Location Section -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm border border-outline-variant/10 grid grid-cols-1 lg:grid-cols-5">
+<div class="lg:col-span-2 p-10 md:p-16 flex flex-col justify-center">
+<h2 class="text-3xl font-headline font-bold text-on-surface mb-8">Visit the Pit</h2>
+<div class="space-y-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<div>
+<p class="font-bold text-on-surface">Address</p>
+<p class="text-on-surface-variant">
+706 Nas Dr,<br/>Corpus Christi, TX, 78418</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+<div>
+<p class="font-bold text-on-surface">Hours</p>
+<ul class="text-on-surface-variant text-sm">
+<li>Mon-Thu: 10:30am - 3pm</li>
+</ul>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+<div>
+<p class="font-bold text-on-surface">Phone</p>
+<p class="text-on-surface-variant">361-937-5189</p>
+</div>
+</div>
+</div>
+<!-- <button class="mt-12 bg-primary text-on-primary w-full py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined" data-icon="directions">directions</span> Get Directions
+                    </button> -->
+</div>
+<div class="lg:col-span-3 min-h-[400px] relative">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.4252924996986!2d-97.28277272431275!3d27.673247376202188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8668f76e4502babd%3A0x2a3d8594b9de0aef!2sBoardwalk%20Cafe%20%26%20BBQ!5e0!3m2!1sen!2sus!4v1775794077746!5m2!1sen!2sus" width="600" height="450" style="border:0; margin:0 auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 w-full rounded-t-3xl mt-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8 py-12 max-w-7xl mx-auto">
+<div class="space-y-4">
+<p class="text-xl font-bold text-red-800">Boardwalk Cafe</p>
+<p class="text-stone-500 dark:text-stone-400 text-sm leading-relaxed">
+                    Bringing the smoke to the shore since 2008. The most authentic barbecue experience on the Jersey Coast.
+                </p>
+</div>
+<!-- <div>
+<p class="font-headline font-bold text-on-surface mb-4">Quick Links</p>
+<ul class="space-y-2">
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline hover:text-red-800 transition-opacity" href="#">Menu</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline hover:text-red-800 transition-opacity" href="#">Our Story</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline hover:text-red-800 transition-opacity" href="#">Contact</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline hover:text-red-800 transition-opacity" href="#">Privacy Policy</a></li>
+</ul>
+</div> -->
+<!-- <div>
+<p class="font-headline font-bold text-on-surface mb-4">Follow the Smoke</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
+</a>
+</div>
+</div> -->
+<!-- <div>
+<p class="font-headline font-bold text-on-surface mb-4">Newsletter</p>
+<p class="text-sm text-stone-500 mb-4">Get smokin' hot deals delivered to your inbox.</p>
+<div class="flex">
+<input class="bg-white border-none rounded-l-lg w-full text-sm" placeholder="Email" type="text"/>
+<button class="bg-primary text-on-primary px-4 rounded-r-lg">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</div>
+</div> -->
+</div>
+<div class="border-t border-stone-200 dark:border-stone-800 py-6 px-8 text-center">
+<p class="text-stone-500 dark:text-stone-400 text-sm">© 2026 Boardwalk Cafe. 16 Years of Pit-Smoked Perfection.</p>
+</div>
+</footer>
+</body></html>
